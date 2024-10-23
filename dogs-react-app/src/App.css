@@ -16,6 +16,21 @@
   100% { color: red; }
 }
 
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header h1 {
+  margin-right: 20px;
+  margin-left: 40px;
+  
+}
+
+.header p {
+  margin-bottom: 0;
+}
+
 .rainbow-text {
   animation: rainbow 3s infinite;
 }
@@ -23,6 +38,18 @@
 .custom-font {
   font-family: 'Pacifico', cursive;
   font-size: 3em;
+}
+
+.adopt {
+  background-color: #4a90e2; /* Light blue color */
+  color: white;
+  padding: 10px 20px;
+  margin: 50px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: background-color 0.2s;
 }
 
 @keyframes bounce {
@@ -45,11 +72,12 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  justify-items: center;
 }
 
 .dog img {
-  width: 20vw;
-  height: auto;
+  width: auto;
+  height: 40vh;
   transition: transform 0.2s;
 }
 
@@ -69,4 +97,9 @@
 
 .styled-list li:nth-child(odd) {
   color: #e94e77; /* Pink color */
+}
+
+.content {
+  margin: 40px;
+  text-align: center;
 }
